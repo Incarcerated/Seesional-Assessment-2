@@ -34,13 +34,7 @@ xhr.onreadystatechange  = () => {
                 <p>About: ${objectResponse[i].company.catchPhrase}
                 <p>Address: ${objectResponse[i].address.suite}, ${objectResponse[i].address.street}, ${objectResponse[i].address.city}</p>
                 
-                <ul class="info" id="flex-column">
-                    <li class = "flex-item"><strong>Phone</strong>${objectResponse[i].phone}</li>
-                    <li class = "flex-item"><strong>Email</strong>${objectResponse[i].email}</li>
-                    <li class = "flex-item"><strong>Website</strong>${objectResponse[i].website}</li>
-                   
-                    
-                </ul>
+                
                 <div id="repos"></div>
                 
             </div>
@@ -56,4 +50,3 @@ xhr.onreadystatechange  = () => {
 xhr.send()
 
 
-!function(t){"use strict";t('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=t(this.hash);if((e=e.length?e:t("[name="+this.hash.slice(1)+"]")).length)return t("html, body").animate({scrollTop:e.offset().top},1e3,"easeInOutExpo"),!1}}),t(".js-scroll-trigger").click(function(){t(".navbar-collapse").collapse("hide")}),t("body").scrollspy({target:"#sideNav"})}(jQuery);
