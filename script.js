@@ -34,7 +34,13 @@ xhr.onreadystatechange  = () => {
                 <p>About: ${objectResponse[i].company.catchPhrase}
                 <p>Address: ${objectResponse[i].address.suite}, ${objectResponse[i].address.street}, ${objectResponse[i].address.city}</p>
                 
-                
+                <ul class="info" id="flex-column">
+                    <li class = "flex-item"><strong>Phone</strong>${objectResponse[i].phone}</li>
+                    <li class = "flex-item"><strong>Email</strong>${objectResponse[i].email}</li>
+                    <li class = "flex-item"><strong>Website</strong>${objectResponse[i].website}</li>
+                   
+                    
+                </ul>
                 <div id="repos"></div>
                 
             </div>
