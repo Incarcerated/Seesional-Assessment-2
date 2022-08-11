@@ -42,8 +42,8 @@ body {
     width: 22%;
   height:350px; 
   margin: 0.5em;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow:initial;
+  text-overflow:unset;
 }
 #main{
     display: flex;
@@ -68,8 +68,22 @@ body {
 
 .user-info ul li {
     display: flex;
+    margin: 30px;
+   
+    flex-wrap: wrap;
     
 }
+.flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-item {
+    
+    
+    word-break: break-all; /* new */
+  }
+  
 
 .user-info ul li strong {
     font-size: 0.9rem;
