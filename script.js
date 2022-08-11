@@ -28,13 +28,13 @@ xhr.onreadystatechange  = () => {
                 output += `
             <div id="card" >
             
-            <div class="user-info">
+            <div class ="user-info">
                 <h2>${objectResponse[i].name}</h2>
                 <p>${objectResponse[i].email}</p>
                 <ul class="info">
-                    <li>${objectResponse[i].address.street}<strong>Followers</strong></li>
-                    <li>${objectResponse[i].address.suite}<strong>Following</strong></li>
-                    <li>${objectResponse[i].address.geo.lat}<strong>Repos</strong></li>
+                    <li><strong>Followers</strong>${objectResponse[i].address.street}</li>
+                    <li><strong>Followers</strong>${objectResponse[i].address.suite}</li>
+                    <li><strong>Followers</strong>${objectResponse[i].address.geo.lat}</li>
                     
                 </ul>
                 <div id="repos"></div>
